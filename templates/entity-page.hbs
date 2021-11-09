@@ -4,6 +4,11 @@
         "$id": "sample-stream",
         "source": "knowledgeGraph",
         "destination": "pages",
+        "filter" : {
+            "entityTypes": [
+                "[REPLACE ME]"
+            ]
+        },
         "fields": [
             "id", 
             "uid",
@@ -13,11 +18,6 @@
         ],
         "localization": {
             "locales": ["en"]
-        },
-        "filter" : {
-            "entityTypes": [
-                "[REPLACE ME]"
-            ]
         }
     },
     "urlFormat": "{{slug}}"
