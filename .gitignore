@@ -1,4 +1,5 @@
 /.artifact-output
+/assets
 /public
 /localData
 /node_modules
