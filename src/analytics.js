@@ -14,7 +14,7 @@ function pixelURL(data) {
   return p;
 }
 
-window.trackAnalytics = (businessId, siteId) => {
+window.trackAnalytics = (businessId, siteId, entityId) => {
   if (isStaging()) {
     return;
   }
@@ -25,6 +25,7 @@ window.trackAnalytics = (businessId, siteId) => {
     'eventType': "pageview",
     'businessids': businessId,
     'siteId': siteId,
+    'ids': entityId,
   };
     
   var pixel = pixelURL(jsonData);
